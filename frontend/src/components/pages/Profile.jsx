@@ -1,7 +1,19 @@
 import React from 'react'
+import { useState } from 'react'
 
 export default function Profile() {
+    const [userName, setUserName] = useState('')
+    const [userID, setUserID] = useState('')
+
   return (
-    <div>Profile</div>
+    <div>
+        <main>
+            
+        </main>
+        <Card>
+
+        </Card>
+
+    </div>
   )
 }
