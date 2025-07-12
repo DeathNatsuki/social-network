@@ -22,14 +22,30 @@
     font-style: normal;
 }
 
-.profile-container p {
+.name {
     text-align: center;
     font-size: 28px;
-    margin: 10px 0;
     color: #444;
     font-family: "Libertinus Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.id{
+    color: #aaaaaa;
+    font-family: "Libertinus Mono", monospace;
+}
+
+.description {
+    margin-top: 10px;
+    text-align: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-size: 16px;
+  font-family: "Libertinus Mono", monospace;
 }
 
 .profile-container strong {
@@ -57,4 +73,53 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.profile-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.input-edit {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+}
+
+.input-edit:focus {
+  border-color: #7b61ff;
+  outline: none;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.Edit-btn {
+  background: none;
+  border: none;
+  color: #7b61ff;
+  font-size: 22px;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+  padding: 4px;
+}
+
+.Edit-btn:hover {
+  color: #5a3bdb;
+  transform: scale(1.15);
 }
